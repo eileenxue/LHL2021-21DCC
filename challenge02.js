@@ -32,13 +32,6 @@ Output:
 
 *****************************************/
 
-const exampleAstronaut = {
-  firstName: "Neil",
-  lastName: "Armstrong",
-  nickname: "Steps",
-  prefix: "Astronaut"
-}
-
 const generateAstronautTag = (astronaut) => {
   // Use template literals
   const message = `${astronaut.prefix}: ${astronaut.firstName} "${astronaut.nickname}" ${astronaut.lastName}`
@@ -46,4 +39,11 @@ const generateAstronautTag = (astronaut) => {
 }
 
 // Test the function
+const exampleAstronaut = {
+  firstName: "Neil",
+  lastName: "Armstrong",
+  nickname: "Steps",
+  prefix: "Astronaut"
+}
+
 console.log(generateAstronautTag(exampleAstronaut));
